@@ -1,0 +1,56 @@
+```
+#include<bits/stdc++>
+
+void main()
+{
+
+vector<int> a;
+int sum;
+cout<<"enter the sum"<<endl;
+cout<<"enter the array length"<<endl;
+cin>>n;
+cout<<"enter the array elements"<<endl;
+for(int i=0;i<n;i++)
+{
+   cin>>a[i];
+   }
+sort(a,a+n);
+l=0;
+r=n-1;
+while(l<r)
+{
+if(a[l]+a[r]==sum)
+{cout<<"found"<<endl;
+int k++;}
+else if(a[l]+a[r]<sum)
+{l++;
+  int k++;}
+else 
+{r--;
+int k++;
+}
+
+}
+if(k==0)
+cout<<"not found"<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
