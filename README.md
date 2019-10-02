@@ -1,2 +1,2 @@
 # competative_programming
-covers almost all important sections fields of competative programming.
+lets just solve a bit ..
