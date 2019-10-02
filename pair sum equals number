@@ -33,6 +33,11 @@ int k++;
 }
 if(k==0)
 cout<<"not found"<<endl;
+else 
+cout<<"found sum"<<endl;
+
+
+
 }
 
 
