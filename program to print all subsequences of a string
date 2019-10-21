@@ -1,0 +1,33 @@
+#include <bits/stdc++.h> 
+#include <iostream.h>
+using namespace std; 
+
+void printSubSeqRec(string str, int n, 
+           int index = -1, string curr = "") 
+{ 
+    if (index == n)  
+        return; 
+   
+    cout << curr << "\n"; 
+    for (int i = index + 1; i < n; i++) { 
+   
+        curr += str[i]; 
+        printSubSeqRec(str, n, i, curr); 
+        curr = curr.erase(curr.size() - 1);  
+    } 
+    return; 
+} 
+   
+
+void printSubSeq(string str) 
+{ 
+    printSubSeqRec(str, str.size()); 
+} 
+   
+
+int main() 
+{ 
+    string str = "cab"; 
+    printSubSeq(str); 
+    return 0; 
+} 
